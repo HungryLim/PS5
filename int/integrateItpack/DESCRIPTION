@@ -1,0 +1,19 @@
+Package: integrateItpack
+Title: Integrate values
+Version: 0.1
+Author: Lim
+Maintainer: Ryan T. Moore <rtm@wustl.edu>
+Description: Find sum and difference of squared values
+Depends:
+    R (>= 3.0.0),
+    methods
+License: GPL (>= 2)
+Suggests:
+    devtools
+Collate:
+    'integrateIt.R'
+    'Trapezoid.R'
+    'Simpson.R'
+    'print.R'
+    'tolTest.R'
+RoxygenNote: 6.0.1
