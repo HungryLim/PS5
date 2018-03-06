@@ -36,10 +36,10 @@ build(current.code, path=getwd())
 
 
 integrateIt
-getMethod(integrateIt, "Trapezoid")
+getMethod(integrateIt, "Trap")
 
 print
-getmethod(print, "Simpson")
+getMethod(print, "Simpson")
 
 ## View of function
 integrateIt
