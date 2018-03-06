@@ -26,22 +26,24 @@ current.code <- as.package("integrateItpack")
 load_all(current.code)
 document(current.code)
 
-## Let's look at a function
-getSquares
-getMethod(getSquares, "Trap_Simpson")
-getMethod(getSquares, "AllSquares")
-getMethod(allSquares)
 
-## Let's try it out
-x<-c(1,2)
-y<-c(3,4)
-allObj <- allSquares(x, y)
-allObj
-getSquares(allObj)
 
-## Moving between classes
-addObj <- addSquares(x,y)
-as(object=addObj, Class="AllSquares")
+check(current.code)
+
+
+install(pkg=current.code, local=TRUE)
+build(current.code, path=getwd())
+
+
+integrateIt
+getMethod(integrateIt, "Trapezoid")
+
+print
+getmethod(print, "Simpson")
+
+## View of function
+integrateIt
+
 
 
 
